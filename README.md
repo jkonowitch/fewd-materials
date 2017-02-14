@@ -37,4 +37,4 @@ Accepted, but no feedback given
 
 Run by Dan.
 
-9:30pm - 10pm Tuesdays/Thursday & by appointment.
+5:30pm - 6:30pm Tuesdays/Thursday & by appointment.
