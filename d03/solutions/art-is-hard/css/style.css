@@ -1,0 +1,21 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+h1, h2, hr, p.subtitle {
+  color: #b9b9b9;
+}
+
+h1 {
+  font-size: 46px;
+  margin: 0;
+}
+
+p.caption, p.subtitle {
+  font-size: 12px;
+}
+
+img.frame {
+  box-shadow: 1px 4px 10px black;
+  border-radius: 10px;
+}
