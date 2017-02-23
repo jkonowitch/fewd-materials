@@ -2,3 +2,15 @@ h1 {
   color: green;
   font-size: 50px;
 }
+
+a {
+  color: purple;
+}
+
+.favorite {
+  background-color: blue;
+}
+
+#keanu-and-sandra {
+  height: 180px;
+}
