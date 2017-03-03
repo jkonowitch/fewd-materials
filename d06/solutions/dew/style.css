@@ -27,18 +27,41 @@ div.container {
 }*/
 
 div.cover-photo {
-  background-image: url('me.jpg');
   height: 300px;
   width: 100%;
+  background-image: url('me.jpg');
   background-size: cover;
   background-position: center;
 }
 
+div.main {
+  width: 360px;
+  margin: 0 auto;
+}
 
+div.main > p {
+  color: grey;
+  line-height: 22px;
+}
 
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: blue;
+  width: 170px;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
 
+#email {
+  width: 100%;
+}
 
-
+#twitter, #medium, #pinterest {
+  margin-right: 15px;
+}
 
 
 
