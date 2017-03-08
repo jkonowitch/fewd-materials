@@ -1,0 +1,27 @@
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: yellow;
+}
+
+h1, .nav, .article {
+  display: inline-block;
+  width: 476px;
+}
+
+h1 {
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav {
+  text-align: right;
+}
