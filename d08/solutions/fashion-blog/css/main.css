@@ -1,0 +1,72 @@
+* {
+  font-family: 'Lato';
+}
+
+body {
+  margin: 0;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+
+.container {
+  width: 720px;
+}
+
+img {
+  width: 100%;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 300;
+}
+
+header h1 {
+  color: #dd0000;
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+}
+
+header h4 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+header nav > a {
+  margin-right: 10px;
+  color: #dddddd;
+}
+
+nav, .post  {
+  margin-bottom: 30px;
+}
+
+.post a, footer a {
+  color: #dd0000;
+}
+
+.post {
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 30px;
+}
+
+.post a {
+  display: block;
+  text-align: right;
+}
+
+.post .date {
+  color: #dddddd;
+  font-size: 1.2rem;
+}
+
+footer {
+  color: #dddddd;
+}
+
+footer nav a {
+  margin: 0 5px;
+}
+
+footer nav a:first-child {
+  margin-left: 0;
+}
