@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Secret Playground</title>
+  <style type="text/css">
+    div#container {
+      width: 100%;
+    }
+
+    .grid .row {
+      margin: 0 0 1px 0;
+      height: 30px;
+    }
+
+    .grid .piece {
+      margin: 0;
+      height: 30px;
+      width: 30px;
+      border: 1px black dotted;
+      display: inline-block;
+    }
+
+    .grid .piece.block {
+      box-shadow: 1px 1px 1px dimgrey;
+    }
+
+    .piece.traveler {
+      background: url(./dwarf.png) 5px 0 no-repeat;
+      background-size: 70% 105%;
+    }
+    .traveler.down {
+      transform: rotate(90deg);
+    }
+    .traveler.left {
+      transform: scaleX(-1);
+    }
+    .traveler.up {
+      transform: rotate(270deg);
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <div id="container"></div>
+  </center>
+
+  <script src="./app.js"></script>
+  <script type="text/javascript">
+    // THIS IS SETUP CODE - DO NOT CHANGE
+    window.g = new Grid(20);
+    g.attachTo('#container');
+    window.d = new Traveler(0, 0, window.g);
+
+    var coords = []
+
+    function add(x, y) {
+      coords.push([x, y, 'color grey']);
+    }
+
+    for (var y = 1; y < 20; y++) {
+      for (var x = 0; x < 4; x++) {
+        add(x, y);
+      }
+    }
+
+    for (var y = 0; y < 16; y++) {
+      for (var x = 5; x < 10; x++) {
+        add(x, y);
+      }
+    } 
+
+    for (var y = 0; y < 5; y++) {
+      for (var x = 10; x < 20; x++) {
+        add(x, y);
+      }
+    }
+
+    for (var y = 17; y < 20; y++) {
+      for (var x = 4; x < 20; x++) {
+        add(x, y);
+      }
+    }
+
+    for (var y = 6; y < 17; y++) {
+      for (var x = 11; x < 16; x++) {
+         add(x, y);
+      }
+    }
+
+    for (var y = 5; y < 14; y++) {
+      for (var x = 17; x < 20; x++) {
+         add(x, y);
+      }
+    }
+
+    for (var y = 15; y < 17; y++) {
+      for (var x = 16; x < 20; x++) {
+        add(x, y);
+      }
+    }
+
+    g.batchFill(coords);
+    g.fill(19, 14, 'color green');
+    // END SETUP CODE
+  </script>
+  <script src="./solution.js"></script>
+  <script src="./bonus-solution.js"></script>
+</body>
+</html>

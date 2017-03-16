@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Playground</title>
+  <style type="text/css">
+    div#container {
+      width: 100%;
+      min-width: 680px;
+    }
+
+    .grid .row {
+      margin: 0 0 1px 0;
+      height: 30px;
+    }
+
+    .grid .piece {
+      margin: 0;
+      height: 30px;
+      width: 30px;
+      border: 1px black dotted;
+      display: inline-block;
+    }
+
+    .grid .piece.block {
+      box-shadow: 1px 1px 1px dimgrey;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <div id="container"></div>
+  </center>
+
+  <script src="./app.js"></script>
+  <script type="text/javascript">
+    var g = new Grid(20);
+    g.attachTo('#container');
+  </script>
+</body>
+</html>
