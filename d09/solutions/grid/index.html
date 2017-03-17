@@ -41,16 +41,27 @@
     g.fill(0, 0, "color orange");
     g.fill(0, 5, "color purple");
 
-    var responseFromUser = prompt("Do you want this next cell to be filled in?");
+    // var responseFromUser = prompt("Do you want this next cell to be filled in?");
 
-    if (responseFromUser === "yes") {
-      var colorFromUser = prompt("What color do you want?");
-      g.fill(0, 1, "color " + colorFromUser);
-    } else {
-      alert("You're no fun.");
+    // if (responseFromUser === "yes") {
+    //   var colorFromUser = prompt("What color do you want?");
+    //   g.fill(0, 1, "color " + colorFromUser);
+    // } else {
+    //   alert("You're no fun.");
+    // }
+
+    // g.fill(0, 1, "color green");
+    // g.fill(1, 1, "color green");
+    // g.fill(2, 1, "color green");
+    // g.fill(3, 1, "color green");
+    // g.fill(4, 1, "color green");
+
+    var num = 0;
+
+    while (num <= 19) {
+      g.fill(num, 1, "color green");
+      num = num + 1;
     }
-
-
   </script>
 </body>
 </html>
