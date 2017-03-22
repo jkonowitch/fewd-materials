@@ -25,16 +25,8 @@ console.log("HELOOOO!");
 
 $("button").on("click", function() {
   var stuffTheUserTyped = $("input").val();
+  console.log(stuffTheUserTyped);
   $("h1").text(stuffTheUserTyped);
 });
 
-
-
-
-
-
-
-
-
-
-
+$("p.cool").css("color", "blue");
