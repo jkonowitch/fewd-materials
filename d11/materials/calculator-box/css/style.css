@@ -1,0 +1,15 @@
+#app {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.grid div {
+	text-align: center;
+	border: 1px dashed #252525;
+	padding: 20px 0;
+}
+
+.grid div:hover {
+	background-color: #cccccc;
+	cursor: pointer;
+}
