@@ -1,0 +1,149 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+h1, h2.tagline, .actions h2 {
+  font-family: 'Merriweather', serif;
+}
+
+.masthead h2, a.button {
+  font-family: 'Oswald', sans-serif;
+}
+
+p {
+  line-height: 1.3em;
+}
+
+a.button {
+  display: block;
+  width: 100%;
+  background-color: #C6C6C6;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  padding: 10px 0;
+  border-radius: 2px;
+  box-shadow: 1px 2px #808080;
+}
+
+a.button:hover {
+  opacity: 0.8;
+}
+
+header {
+  background-color: black;
+  border-bottom: 3px solid yellow;
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  color: yellow;
+  padding-left: 20px;
+  flex: 1;
+}
+
+header nav {
+  text-align: right;
+  flex: 1;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+h2.tagline {
+  background-color: #C6C6C6;
+  font-style: italic;
+  text-align: center;
+  padding: 16px 0;
+  margin: 0;
+}
+
+.crossout {
+  text-decoration: line-through;
+  color: #808080;
+}
+
+.underline {
+  border-bottom: 2px solid yellow;
+}
+
+.masthead {
+  padding: 50px 40px;
+  background-image: url('../img/coworking.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.masthead .match {
+  width: 30%;
+  padding: 30px 35px;
+  background-color: rgba(255, 255, 255, .8);
+  border: 1px solid black;
+}
+
+.masthead h2 {
+  margin: 0;
+}
+
+.masthead a.button {
+  background-color: yellow;
+}
+
+.actions {
+  background-color: #ededed;
+  display: flex;
+}
+
+.actions div {
+  margin: 20px 0;
+  padding: 0 20px 20px 20px;
+  flex: 1;
+}
+
+.actions div:nth-child(2) {
+  border-right: 1px solid #808080;
+  border-left: 1px solid #808080;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 10px 30px;
+}
+
+@media (max-width: 767px) {
+  header, .masthead, .actions {
+    flex-direction: column;
+  }
+
+  header nav {
+    text-align: center;
+    padding-bottom: 12px;
+  }
+
+  .actions div:nth-child(2) {
+    border: none;
+  }
+
+  .actions div {
+    margin: 0;
+  }
+
+  .masthead .match {
+    flex: 1;
+    width: auto;
+  }
+}
