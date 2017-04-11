@@ -1,6 +1,6 @@
 $("button").on("click", function() {
   var city = $("input").val();
-  $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&apikey=e384c58414771f0e6ffcda4019375e9c", function(data) {
+  $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&apikey=MYAPIKEY", function(data) {
     $("h4 .temperature").text(data["main"]["temp"]);
     $("img.icon").attr("src", "http://openweathermap.org/img/w/" + data["weather"][0].icon + ".png");
   });
