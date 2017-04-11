@@ -1,0 +1,53 @@
+body {
+	line-height: 1.8;
+	font-family: "Sue Ellen Francisco", Arial, sans-serif;
+}
+
+section {
+	width: 800px;
+	background-color: white;
+	margin: 0 auto;
+	text-align: center;
+}
+
+h1 {
+	color: #333333;
+	font-size: 40px;
+}
+
+img.icon {
+	vertical-align: middle;
+}
+
+input {
+	width: 400px;
+	font-family: monospace;
+	font-size: 20px;
+	margin: 20px 0;
+	border: 1px solid #9CE6C1;
+	box-shadow: none;
+	padding: 10px;
+}
+
+input:focus {
+	outline-color: #9CE6C1;
+}
+
+button {
+	width: 200px;
+	font-family: monospace;
+	font-size: 20px;
+	margin: 20px 0;
+	border: 1px solid #9CE6C1;
+	box-shadow: none;
+	padding: 10px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #9CE6C1;
+}
+
+button:focus {
+	outline: 0;
+}
